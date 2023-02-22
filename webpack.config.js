@@ -30,11 +30,11 @@ module.exports = {
            use: {
              loader: "babel-loader",
              options: {
-             cacheDirectory: true,
-             compact: false,
-             plugins: ['@angular/compiler-cli/linker/babel'],
-           },
-        },
+              cacheDirectory: true,
+              compact: false,
+              plugins: ['@angular/compiler-cli/linker/babel'],
+            },
+          },
         },
         {
           test: /\.scss$/,
