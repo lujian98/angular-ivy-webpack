@@ -1,0 +1,140 @@
+/*
+ * Placeholder css to get things looking decent. Remove once framework is in place.
+ */
+
+#north, #main-navigation > .x-tab-panel-header {
+  display: none;
+}
+
+app-root {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#main-navigation {
+  top: 44px !important;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.navbar-header {
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 14px;
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.07);
+  position: relative;
+  z-index: 5;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #adadad;
+    z-index: -1;
+  }
+
+  .navbar-logo {
+    width: 90px;
+    height: 30px;
+  }
+
+  .brand {
+    font-weight: 300;
+    font-size: 16px;
+    color: #797979;
+    display: inline-block;
+    margin-left: 14px;
+    margin-right: 30px;
+    padding-right: 30px;
+    border-right: 1px solid #ebe5e0;
+    line-height: 30px;
+  }
+
+  .sun-navbar-item {
+    padding: 0;
+
+    .content {
+      padding: .675rem 1rem;
+    }
+  }
+
+  sun-menu {
+    flex: 1;
+  }
+
+  .sun-menu-items {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    .sun-menu-item {
+      & > .sun-menu-items {
+        position: absolute;
+        display: inherit;
+
+        &.collapsed {
+          display: none;
+        }
+      }
+
+      .sun-menu-icon {
+        margin: 0 0.25rem 0 0;
+      }
+
+      .sun-menu-caret {
+        margin: 0 0 0 0.25rem;
+      }
+
+      a {
+        padding: .675rem 1rem;
+        font-size: 14px;
+        border: none;
+        outline: 0;
+        cursor: pointer;
+        color: #4b4f54;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          background-color: #f1f1f1;
+        }
+        &.active {
+          background-color: #fff;
+          color: #f18a20;
+          cursor: default;
+          border-color: #f18a20;
+        }
+
+        & + ul {
+          padding: 10px 26px 10px 10px;
+          background: #fff;
+          box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+          min-width: 150px;
+        }
+      }
+    }
+  }
+}
+
+.sun-navbar .secondary-logo-container {
+  flex-shrink: 0;
+}
+
+@media only screen and (min-width: 1220px) and (max-width: 1400px) {
+  button[sun-navbar-item] .content {
+    display: none;
+  }
+}

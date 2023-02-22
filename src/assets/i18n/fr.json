@@ -1,0 +1,922 @@
+{
+  "activities": "Activités",
+  "add": "Ajouter",
+  "cancel": "Annuler",
+  "decommission": "Désactiver",
+  "DELETE": "Supprimer",
+  "dismiss": "Faire disparaître",
+  "edit": "Modifier",
+  "error": "Erreur",
+  "export": "Exporter",
+  "launch": "Lancer",
+  "maintenance": "Maintenance",
+  "no": "Non",
+  "ok": "OK",
+  "refresh": "Actualiser",
+  "remove": "Supprimer",
+  "rescan": "Relancer l'analyse",
+  "returnToService": "Retourner au service",
+  "yes": "Oui",
+  "LATEST_READING": "Dernière mesure : {{value}} {{unit}}",
+  "header": {
+    "help": "Aide",
+    "profile": "Profil",
+    "search": "Recherche rapide...",
+    "searchNoResults": "Aucun PDU ou périphérique informatique, rack ou porte correspondant n'a été trouvé",
+    "logoff": "Se déconnecter",
+    "toggleTheme": "Changer de thème",
+    "apiGuide": "Guide de l'API",
+    "downloadImportTemplate": "Télécharger un modèle d'importation",
+    "menu": {
+      "dashboards": "Tableaux de bord",
+      "events": "Événements",
+      "facilityItems": "Éléments de l'installation",
+      "itDevices": "Périphériques informatiques",
+      "sensors": "Capteurs",
+      "pue": "PUE",
+      "reports": "Rapports",
+      "settings": "Paramètres",
+      "sites": "Sites"
+    }
+  },
+  "edmBranch": {
+    "aisle": "Allée",
+    "city": "Ville",
+    "country": "Pays",
+    "dataCenter": "Centre de données",
+    "door": "Porte",
+    "floor": "Sol",
+    "rack": "Rack",
+    "region": "Région",
+    "room": "Pièce",
+    "row": "Ligne",
+    "territory": "Territoire"
+  },
+  "events": {
+    "eventListing": "Liste des événements",
+    "eventSeverities": "Gérer la gravité des événements",
+    "manageSnmpTrapSettings": "Gérer les paramètres des interruptions SNMP",
+    "manageMyEventNotifications": "Gérer les notifications de mes événements",
+    "severity": {
+      "0": "Inconnu",
+      "1": "Critique",
+      "2": "Avertissement",
+      "3": "Informatif"
+    },
+    "EVENT_CLEARING": {
+      "CLEAR_EVENT": "Clear Event",
+      "CONFIRM_EVENT_CLEARING": "Confirm Event Clearing",
+      "CONFIRM_REASON": "Please enter a reason for this operation:"
+    }
+  },
+  "facilityItems": {
+    "activePower": "Puissance active (W)",
+    "addANewPDU": "Ajouter un nouveau PDU",
+    "addNewTask": "Ajouter une nouvelle tâche",
+    "apparentPower": "Puissance apparente (VA)",
+    "bulkConfigurationActivities": "Activités de configuration en bloc",
+    "bulkFirmwareUpdates": "Mises à jour en bloc du microprogramme",
+    "crac": "CRAC",
+    "current": "Actuel (A)",
+    "customField1": "Champ personnalisé 1",
+    "customField2": "Champ personnalisé 2",
+    "deviceActivities": "Activités du périphérique",
+    "deviceGroups": "Groupes de périphériques",
+    "discoverPDUsOnTheNetwork": "Découvrir les PDU sur le réseau",
+    "downloadPDUSensorReadings": "Télécharger les relevés des capteurs PDU",
+    "dynamicPlugin": "Plug-in dynamique",
+    "events": "Événements",
+    "externalKey": "Clé externe",
+    "facilityItemListing": "Liste des éléments de l'installation",
+    "firmware": "Microprogramme",
+    "floorPDU": "PDU au sol",
+    "floorUPS": "UPS au sol",
+    "health": "Santé",
+    "inletName": "Nom de l’entrée",
+    "inletTemperature": "Température de l’entrée ({{temperatureUnit}})",
+    "importPDUsFromCsvFile": "Importer des PDU depuis un fichier csv",
+    "ipAddress": "IP",
+    "label": "Libellé",
+    "listAllPDUs": "Lister tous les PDU",
+    "location": "Emplacement",
+    "macAddress": "Adresse Mac",
+    "manufacturer": "Fabricant",
+    "model": "Modèle",
+    "name": "Nom",
+    "pduActivities": "Activités des PDU",
+    "pduHistory": "Historique des PDU",
+    "powerPanel": "Panneau d'alimentation",
+    "powerScheduling": "Planification de la puissance",
+    "proxyIndex": "Indice de proxy",
+    "rackPDU": "PDU en rack",
+    "rackTransferSwitch": "Commutateur de transfert en rack",
+    "rackUPS": "UPS en rack",
+    "standaloneMeter": "Compteur autonome",
+    "serialNumber": "Numéro de série",
+    "showAllDevices": "Afficher tous les périphériques",
+    "shutdownCommands": "Commandes d'arrêt",
+    "taskScheduling": "Planification des tâches",
+    "type": "Type",
+    "viewTaskResults": "Afficher les résultats de la tâche",
+    "maintenanceDialog": {
+      "title": "Confirmer la désactivation du ou des PDU",
+      "message": "La mise en mode maintenance des PDU aura pour conséquence qu'aucune donnée ne sera collectée ou qu'aucun événement ne sera surveillé pour le PDU.",
+      "button": "Entrer en mode maintenance pour le(s) PDU(s)",
+      "progressTitle": "Mise en mode maintenance du ou des PDU en cours."
+    },
+    "decommissionDialog": {
+      "title": "Confirmer la désactivation du ou des PDU",
+      "message": "La désactivation des PDU aura pour conséquence qu'aucune donnée ne sera collectée ou qu'aucun événement ne sera surveillé pour le PDU.",
+      "button": "Désactivation du ou des PDU",
+      "progressTitle": "Désactivation du ou des PDU en cours."
+    },
+    "returntoServiceDialog": {
+      "title": "Confirmer la remise en service du ou des PDU",
+      "message": "La remise en service des PDU entraînera un redémarrage de la collecte de données et de la surveillance des événements pour le PDU.",
+      "button": "Remise en service du ou des PDU",
+      "progressTitle": "Remise en service du ou des PDU en cours."
+    },
+    "removeDialog": {
+      "title": "Confirmer la suppression de la PDU",
+      "message": "La suppression d'un PDU entraînera la perte permanente de toutes les données collectées. Souhaitez-vous vraiment continuer ?",
+      "button": "Supprimer le(s) PDU(s) et les données",
+      "progressTitle": "Suppression de PDU en cours."
+    },
+    "rescanDialog": {
+      "progressTitle": "Nouvelle analyse de PDU(s) en cours."
+    }
+  },
+  "HTTP_ERROR_RESPONSE": {
+    "AUTHORIZATION_FAILED": "L'autorisation à la ressource n'est pas permise",
+    "NO_OBJECT_FOUND": "No objects found with that id."
+  },
+  "INLETS": {
+    "DEVIATION": "Deviation %"
+  },
+  "INTEGRATION": {
+    "SYSTEM_INTEGRATED": "Power IQ is integrated with dcTrack.",
+    "GUIDE_LINK": "Refer to this guide before making changes in Power IQ",
+    "DEVICE_INTEGRATION": "({{system_integrated}} Make Outlet Assoications through dcTrack)"
+  },
+  "MEASURES": {
+    "HUMIDITY": "Humidité",
+    "TEMPERATURE_UNIT": "Température (°{{temperatureUnit}})",
+    "CURRENT": "Ampères",
+    "VOLTS": "Volts"
+  },
+  "pduHealth": {
+    "activeEvents": "Événements actifs",
+    "connectivity": "Connectivité",
+    "critical": "Critique",
+    "decommissioned": "Mis(e) hors service",
+    "good": "Bon",
+    "PLUS": "Plus",
+    "maintenance": "Maintenance",
+    "MORE_EVENTS": "{{count}} autres évènements",
+    "warning": "Avertissement"
+  },
+  "PROGRESS": {
+    "COMPLETED_WITH_ERRORS": "La tâche s’est achevée avec {{count}} erreur(s)",
+    "COMPLETED_WITH_SUCCESS": "La tâche est achevée",
+    "JOB_LOG_WINDOW_TITLE": "Messages sur les tâches",
+    "VIEW_LOG": "Voir le journal"
+  },
+  "thresholds": {
+    "circuitBreakerStateThresholdEnabledLabel": "Seuils d'état du disjoncteur d'activation",
+    "unbalanceCalculationsLimit": "Les valeurs de courant déséquilibré sont calculées lorsque le courant est d'au moins 5 ampères sur l'une des phases."
+  },
+  "CIRCUIT_BREAKERS": {
+    "STATES": {
+      "CLOSED": "Fermé",
+      "OPEN": "Ouvert",
+      "UNKNOWN": "Inconnu"
+    }
+  },
+  "PAGES": {
+    "ADMIN": {
+      "MENU": {
+        "SEARCH SETTINGS": "Rechercher des paramètres...",
+        "ABOUT": "À propos",
+        "APPLIANCE ADMINISTRATION": "Administration des appareils",
+        "POWER IQ SETTINGS": "Paramètres de Power IQ",
+        "AUDIT LOG": "Journal d'audit",
+        "SOFTWARE UPGRADES": "Mises à jour des logiciels",
+        "PRODUCT LICENSING": "Octroi de licences produit",
+        "SERVER SETTINGS": "Paramètres du serveur",
+        "APPLICATION SETTINGS": "Paramètres de l'application",
+        "DYNAMIC PLUGINS": "Plug-ins dynamiques",
+        "DEFAULT THRESHOLDS": "Seuils par défaut",
+        "DATA MANAGEMENT": "Gestion des données",
+        "DATA BACKUPS": "Sauvegardes de données",
+        "REMOTE STORAGE": "Stockage à distance",
+        "ODBC ACCESS": "Accès ODBC",
+        "DATA ROLLUP RETENTION": "Conservation de la liste des données",
+        "ENTERPRISE RELATIONSHIPS": "Relations d’entreprise",
+        "AUTHORIZATION AND AUTHENTICATION": "Autorisation et authentification",
+        "USER ACCOUNTS": "Comptes utilisateur",
+        "AD AND LDAP": "AD et LDAP",
+        "SAML": "SAML",
+        "USER GROUPS": "Groupes d'utilisateurs",
+        "DOOR ACCESS CONTROL": "Contrôle d'accès basé sur les portes",
+        "SECURITY AND ENCRYPTION": "Sécurité et chiffrement",
+        "HTTPS CERTIFICATE": "Certificat HTTPS",
+        "DATA BACKUP ENCRYPTION": "Chiffrement de la sauvegarde de données",
+        "IP BASED ACCESS CONTROL": "Contrôle d'accès basé sur les adresses IP",
+        "LAUNCH FACILITY ITEMS": "Launch Facility Items",
+        "PASSWORD REQUIREMENTS": "Exigences liées aux mots de passe",
+        "OTHER SECURITY SETTINGS": "Autres paramètres de sécurité",
+        "TRUSTED CERTIFICATES": "Certificats de confiance",
+        "TOOLTIPS": {
+          "ABOUT": "À propos, Assistance, Diagnostics, Arrêt et Redémarrage",
+          "POWER IQ SETTINGS": "Configurer les paramètres d'interrogation, de contrôle de l'alimentation et de notification de Power IQ",
+          "APPLIANCE ADMINISTRATION": "Administrer les paramètres, les mises à jour, les licences, les journaux d'audit, les plug-ins dynamiques et les seuils",
+          "AUDIT LOG": "Afficher et télécharger le journal d'audit du système",
+          "SOFTWARE UPGRADES": "Appliquer les correctifs logiciels pour mettre à jour cet appareil",
+          "PRODUCT LICENSING": "Gestion et information sur les licences",
+          "SERVER SETTINGS": "Configurer les destinations des journaux système, les proxies HTTP et les paramètres du serveur SMTP",
+          "APPLICATION SETTINGS": "Configurer les paramètres régionaux par défaut, l'heure et d'autres options de Power IQ",
+          "DYNAMIC PLUGINS": "Configurer et gérer les plug-ins PDU dynamiques",
+          "DEFAULT THRESHOLDS": "Configurer les seuils pour les capteurs et les racks",
+          "DATA MANAGEMENT": "Télécharger des fichiers de sauvegarde, Restaurer des sauvegardes",
+          "DATA BACKUPS": "Télécharger, générer et restaurer des sauvegardes de données Power IQ",
+          "REMOTE STORAGE": "Stocker automatiquement les sauvegardes de vos données sur un autre serveur",
+          "ODBC ACCESS": "Configurer l'accès externe à la base de données",
+          "DATA ROLLUP RETENTION": "Configurer la période de conservation des données brutes et consolidées",
+          "ENTERPRISE RELATIONSHIPS": "Organiser les relations d'entreprise à l'aide de fichiers CSV",
+          "AUTHORIZATION AND AUTHENTICATION": "Ajouter, supprimer, attribuer des rôles et des groupes",
+          "USER ACCOUNTS": "Ajouter, supprimer, attribuer des rôles et et modifier les comptes utilisateur",
+          "AD AND LDAP": "Modifier les paramètres de connectivité aux serveurs AD et LDAP",
+          "SAML": "Configuration SAML",
+          "USER GROUPS": "Ajouter, supprimer, attribuer des rôles et et modifier les groupes d'utilisateurs",
+          "DOOR ACCESS CONTROL": "Gérer les cartes et les horaires d'accès",
+          "SECURITY AND ENCRYPTION": "Charger des certificats pour les connexions https vers Power IQ",
+          "HTTPS CERTIFICATE": "Charger un certificat pour les connexions HTTPS vers Power IQ",
+          "DATA BACKUP ENCRYPTION": "Télécharger une clé de chiffrement pour crypter les sauvegardes de Power IQ",
+          "IP BASED ACCESS CONTROL": "Restreindre l'accès à Power IQ en fonction de l'adresse IP",
+          "LAUNCH FACILITY ITEMS": "Configure Facility Items Launch",
+          "PASSWORD REQUIREMENTS": "Configurer des règles liées à la complexité du mot de passe",
+          "OTHER SECURITY SETTINGS": "Configurer les paramètres du délai de session de l'utilisateur et du message de connexion",
+          "TRUSTED CERTIFICATES": "Télécharger les certificats de confiance utilisés pour valider les certificats sur les serveurs LDAP"
+        }
+      }
+    },
+    "BROWSER": {
+      "CARD_READERS": {
+        "ENTITY": {
+          "FACILITY_ITEM": "Élément de l'installation",
+          "MANUFACTURER": "Fabricant",
+          "PRODUCT": "Produit",
+          "SERIAL_NUMBER": "Numéro de série"
+        }
+      },
+      "CHARTS": {
+        "LOADING_WIDGET_DATA": "Loading Widget Data...",
+        "OUTPUT_PERCENT_LOAD_CHART": {
+          "TITLE": "{{ title }} Output Percent Load",
+          "Y_AXIS_LABEL": "Load %"
+        },
+        "COMPARISON_CHART": {
+          "TITLE": "{{ title }} Tableau comparatif",
+          "WARNING": {
+            "MESSAGE": "Ce graphique peut potentiellement contenir un grand nombre de données. Selon la série que vous sélectionnez, l'exécution peut prendre plusieurs minutes.",
+            "BUTTON_LABEL": "Rapport d'exécution"
+          }
+        },
+        "BATTERY_RUNTIME_TREND_CHART": {
+          "TITLE": "{{title}} Autonomie restante de la batterie",
+          "Y_AXIS_LABEL": "Durée d'exécution restante (minutes)"
+        },
+        "BATTERY_VOLT_AMP_TREND_CHART": {
+          "TITLE": "{{ title }} Tendance de la batterie"
+        },
+        "CAPACITY_TREND_CHART": {
+          "TITLE": "{{ title }} Graphique de la tendance des capacités",
+          "PDU_CAPACITY": "{{ itemLabel }} {{type}} {{number}} Graphique de tendance"
+        },
+        "ENVIRONMENTAL_SUMMARY_TREND_CHART": {
+          "TITLE": "{{ title }} Graphique de la tendance environnementale",
+          "CAPTION": "Le graphique montre la valeur du seuil global pour les capteurs de température. Les capteurs individuels peuvent avoir une valeur de remplacement locale différente du réglage global."
+        },
+        "ENTITY_BULLET_CHART": {
+          "ACTIVE_POWER": "Puissance active",
+          "ACTIVE_POWER_UNIT_MW": "Mégawatt",
+          "ACTIVE_POWER_UNIT_KW": "Kilowatt",
+          "ACTIVE_POWER_UNIT_W": "Watt",
+          "ACTIVE_POWER_TIP": "Ce graphique montre la valeur de la puissance active actuelle pour le nœud sélectionné.",
+          "INLET_TITLE": "Entrée {{ordinal}}",
+          "INLET_UNIT": "Ampères",
+          "INLET_TIP": "Ce graphique indique la dernière valeur actuelle pour l'élément de l'installation sélectionné.",
+          "MAX_INLET_TEMP": "Température d'entrée maximale",
+          "MAX_INLET_C_TEMP_UNIT": "Celsius",
+          "MAX_INLET_F_TEMP_UNIT": "Fahrenheit",
+          "MAX_INLET_TEMP_TIP": "Ce graphique indique la température d'entrée la plus chaude actuelle dans le nœud sélectionné.",
+          "NO_DATA": "Aucune donnée",
+          "NORMAL_RANGE": "Plage normale",
+          "WARNING_RANGE": "Plage d'avertissement",
+          "CRITICAL_RANGE": "Portée critique",
+          "SET_POWER_RANGE_CONDITION": "Set the Capacity under Details to get accurate red, yellow, and green regions.",
+          "SET_INLET_RANGE_CONDITION": "Set an inlet threshold using the Sensors tab to get accurate red, yellow, and green regions."
+        },
+        "FILTERS": {
+          "LABELS": {
+            "PERIOD": "Période",
+            "POSITION": "Position",
+            "STATISTIC": "Statistiques",
+            "THRESHOLD": "Seuil",
+            "SERIES": "Série",
+            "MEASURE": "Mesurer"
+          },
+          "PERIODS": {
+            "PASTHOUR": "L’heure précédente",
+            "LASTHOUR": "La dernière heure",
+            "PAST24HOURS": "Les dernières 24 heures",
+            "YESTERDAY": "Hier",
+            "PASTWEEK": "La semaine précédente",
+            "LASTWEEK": "La semaine dernière",
+            "PASTMONTH": "Le mois précédent",
+            "LASTMONTH": "Le mois dernier",
+            "YEARTODATE": "L'année à ce jour",
+            "PASTYEAR": "L'année écoulée",
+            "LASTYEAR": "L'année écoulée"
+          },
+          "POSITIONS": {
+            "INLET": "Entrée",
+            "OUTLET": "Sortie"
+          },
+          "STATISTICS": {
+            "AVERAGE": "Moyenne",
+            "MAXIMUM": "Maximum",
+            "MINIMUM": "Minimum"
+          },
+          "THRESHOLDS": {
+            "TOP": "Température maximale globale",
+            "MIDDLE": "Température moyenne globale",
+            "BOTTOM": "Température minimale globale",
+            "NOT_SET": "Température globale non réglée"
+          },
+          "SERIES": {
+            "FLOOR": "Sol",
+            "ROOM": "Pièce",
+            "AISLE": "Allée",
+            "ROW": "Ligne",
+            "RACK": "Rack",
+            "RACKPDUINLETS": "Entrées du PDU en rack",
+            "ITDEVICE": "Périphérique informatique",
+            "OUTLETS": "Sorties"
+          },
+          "MEASURE": {
+            "AMPS": "Ampères",
+            "WATTS": "Watts"
+          },
+          "PDU_THRESHOLDS": {
+            "AUTOMATIC": "Automatique",
+            "NONE": "Aucun(e)"
+          }
+        }
+      },
+      "DOOR_ASSOCIATION_LIST": {
+        "HEADER": "Portes",
+        "NAME": "Nom",
+        "ENCLOSURE": "Boîtier",
+        "PLACEMENT": "Emplacement"
+      },
+      "KEYPADS": {
+        "ENTITY": {
+          "FACILITY_ITEM": "Élément de l'installation",
+          "MANUFACTURER": "Fabricant",
+          "PRODUCT": "Produit",
+          "SERIAL_NUMBER": "Numéro de série"
+        }
+      },
+      "OUTLETS": {
+        "RENAMING_OUTLET": "Renommer une sortie"
+      },
+      "SENSORS": {
+        "ENTITY": {
+          "SUB_TYPE": {
+            "ABSOLUTE_HUMIDITY_SENSOR": "Absolute Humidity",
+            "AIR_FLOW_SENSOR": "Air Flow",
+            "AIR_PRESSURE_SENSOR": "Air Pressure",
+            "CONTACT_CLOSURE_SENSOR": "Contact Closure",
+            "HUMIDITY_SENSOR": "Humidity",
+            "MOTION_DETECTION_SENSOR": "Motion",
+            "ON_OFF_SENSOR": "On/Off",
+            "POWERED_DRY_CONTACT_SENSOR": "Powered Dry Contact",
+            "SMOKE_SENSOR": "Smoke Sensor",
+            "TAMPER_DETECTION_SENSOR": "Tamper Detection",
+            "TEMPERATURE_SENSOR": "Temperature",
+            "VIBRATION_ACCELERATION_SENSOR": "Vibration Acceleration",
+            "VIBRATION_SENSOR": "Vibration",
+            "WATER_SENSOR": "Water"
+          },
+          "FACILITY_ITEM": "Élément de l'installation",
+          "ORDINAL": "Ordinal",
+          "STATE": "État",
+          "TYPE": "Type",
+          "POSITION": "Position",
+          "RENAMING_SENSOR": "Renommer un capteur",
+          "DECOMMISSIONED": "Decommissioned",
+          "SINCE": "Since: {{ since_date }}",
+          "SERIAL": "Serial: {{ serial }}",
+          "LAST_READING": "Last Reading: {{time_ago}}"
+        },
+        "POSITIONS": {
+          "INLET": "Entrée",
+          "OUTLET": "Sortie",
+          "EXTERNAL": "Air extérieur"
+        },
+        "VERTICAL_POSITION": {
+          "TOP": "Top",
+          "MIDDLE": "Middle",
+          "BOTTOM": "Bottom"
+        },
+        "STATES": {
+          "ON": "Marche",
+          "OFF": "Arrêt",
+          "NORMAL": "Normal",
+          "ALARM": "Alarme",
+          "OPEN": "Ouvert",
+          "CLOSED": "Fermé"
+        }
+      },
+      "BATTERY": {
+        "BATTERY_DETAILS": "Informations sur la batterie",
+        "STATUS": "Statut",
+        "DEPLETED": "Déchargé(e)",
+        "FAULT": "Erreur",
+        "LOW": "Faible",
+        "NORMAL": "Normal",
+        "UNKNOWN": "Inconnu",
+        "CAPACITY": "Capacité",
+        "DC_VOLTAGE": "Tension CC",
+        "DC_CURRENT": "Courant CC",
+        "RUNTIME_REMAINING": "Durée d'exécution restante",
+        "SECONDS_ON_BATTERY": "Secondes sur batterie",
+        "NEEDS_REPLACEMENT": "Besoin d'être remplacé(e) ?",
+        "LATEST_READING_TAKEN": "Dernière lecture effectuée il y a {{time_ago}}",
+        "NO_VALUE": "S/O"
+      },
+      "UPS": {
+        "UPS_DETAILS": "Informations sur l’onduleur",
+        "NORMAL": "Normal",
+        "BYPASS": "Contournement",
+        "UNKNOWN": "Inconnu",
+        "ON_BATTERY": "Sur batterie",
+        "ORDINAL": "Ordinal",
+        "OUTPUT": "Sortie {{ordinal}}",
+        "OUTPUT_SOURCE": "Source de sortie",
+        "OUTPUT_PERCENT_LOAD": "Pourcentage de charge de la sortie",
+        "OUTPUT_POLE_PERCENT_LOAD": "Pôle {{ordinal}} pourcentage de charge",
+        "LATEST_READING_TAKEN": "Dernière lecture effectuée il y a {{time_ago}}",
+        "NO_DETAILS": "Aucun détail UPS trouvé",
+        "NO_VALUE": "S/O"
+      },
+      "NO_PERMISSIONS": "Aucune autorisation",
+      "ENTITY": {
+        "CAPACITY": "Capacité (kW)",
+        "EXTERNAL_KEY": "Clé externe",
+        "EXTERNAL_KEY_NOTE": "Une clé externe est un identifiant unique de cet objet qui est utilisé lors de l'importation et de l'exportation de relations d'entreprise via un fichier CSV.",
+        "FACILITY_ITEM": "Élément de l'installation",
+        "NAME": "Nom",
+        "MAX_LENGTH": "La longueur maximale de ce champ est de {{length}}",
+        "MIN_VALUE": "La valeur minimale de ce champ est {{value}}",
+        "MAX_VALUE": "La valeur maximale de ce champ est {{value}}",
+        "FIELD_VALUE_GREATER": "La valeur du champ {{fieldA}} doit être supérieure à celle du champ {{fieldB}}",
+        "FIELD_IS_REQUIRED": "Ce champ est obligatoire",
+        "VALID_EMAIL_NOTE": "Ce champ doit être une adresse électronique au format « user@example.com »",
+        "SAVE": "Sauvegarder",
+        "CARD_READERS": "Lecteurs de cartes",
+        "KEYPADS": "Pavés numériques",
+        "CUSTOM_FIELDS": "Champs personnalisés",
+        "CUSTOM_FIELD_1": "Champ personnalisé 1",
+        "CUSTOM_FIELD_2": "Champ personnalisé 2",
+        "EDIT_CUSTOM_FIELD_NAMES": "Modifier les noms des champs personnalisés",
+        "DATA_CENTER": {
+          "COMPANY_AND_CONTACT": "Entreprise et contact",
+          "COMPANY": "Nom de l’entreprise",
+          "CONTACT": "Nom du contact",
+          "PHONE": "Téléphone",
+          "EMAIL": "E-mail",
+          "ADDRESS": "Adresse",
+          "CITY": "Ville",
+          "STATE": "État ou province",
+          "COUNTRY": "Pays",
+          "RATINGS": "Évaluations et paramètres",
+          "PEAK_RATE": "Taux de pointe ({{currencySymbol}}/kWh)",
+          "OFF_PEAK_RATE": "Taux hors pointe ({{currencySymbol}}/kWh)",
+          "PEAK_BEGIN": "Début du pic",
+          "PEAK_END": "Fin du pic",
+          "PUE_CRITICAL_THRESHOLD": "Seuil critique du PUE",
+          "PUE_WARNING_THRESHOLD": "Seuil d'avertissement du PUE",
+          "CO2_FACTOR": "CO<sub>2</sub> Facteur",
+          "COOLING_FACTOR": "Facteur de refroidissement",
+          "COOLING_SAVINGS": "Économies % par °C",
+          "APPROXIMATELY_F_DEGREES": "Environ {{fDegrees}}% par °F"
+        },
+        "DEVICE": {
+          "CUSTOMER": "Client",
+          "IP_ADDRESS": "Adresse IP",
+          "INVALID_IP_ADDRESS": "Adresse IP non valide",
+          "DEVICE_TYPE": "Type de périphérique",
+          "POWER_RATING": "Puissance nominale (Watts/VA)",
+          "ASSET_TAG_ID": "ID de l’étiquette d'actif",
+          "ASSET_DATA": "Données de l’actif",
+          "RACK_UNIT_NUMBER": "Nombre des unités en rack",
+          "LED_STATE": "Statut de la LED",
+          "MODE": "Mode",
+          "COLOR": "Couleur",
+          "LINK_TO_ASSET_STRIP": "Lien vers la bande d'actifs",
+          "DECOMMISSIONED": "Mis(e) hors service ?",
+          "GRACEFUL_SHUTDOWN": "Arrêt progressif",
+          "USE_GRACEFUL_SHUTDOWN": "Utiliser l’arrêt progressif",
+          "SHUTDOWN_COMMAND": "Commande d'arrêt",
+          "SHUTDOWN_WAIT": "Attente de l'arrêt",
+          "GRACEFUL_SHUTDOWN_NOTE": "Après avoir émis une commande d'arrêt, Power IQ attendra ce nombre de secondes avant de mettre la prise hors tension.",
+          "TEST_CONNECTION": "Tester la connexion",
+          "TEST_CONNECTION_DIALOG_TITLE": "Test de la commande d'arrêt avec le périphérique",
+          "POWER_CONNECTIONS": {
+            "POWER_CONNECTIONS": "Connexions d'alimentation",
+            "ASSOCIATE": "Associer",
+            "OUTLETS": "Sorties",
+            "CIRCUITS": "Circuits",
+            "POWERED_BY": "Alimenté par",
+            "STATE": "État"
+          },
+          "DEVICE_GROUPS": {
+            "DEVICE_GROUPS": "Groupes de dispositifs",
+            "NAME": "Nom",
+            "ADD_TO_DEVICE_GROUP": "Ajouter à un groupe de dispositifs",
+            "CREATE_NEW_DEVICE_GROUP": "Créer un Groupe de Dispositifs",
+            "REMOVE_FROM_DEVICE_GROUP": "Remove From Device Group(s)",
+            "REMOVE_FROM_DEVICE_GROUP_TITLE": "Warning Removing Device From Device Group",
+            "REMOVE_FROM_DEVICE_GROUP_MESSAGE": "Are you sure you wish to remove the device from the selected device group(s)?"
+          }
+        },
+        "DOOR": {
+          "LOCK": "Verrouiller",
+          "LOCKED": "Verrouillé",
+          "UNLOCK": "Déverrouiller",
+          "UNLOCKED": "Déverrouillé",
+          "UNLOCKING": "Déverrouillage de la porte",
+          "LOCKING": "Verrouillage de la porte",
+          "DOOR_CONTROL": "Contrôle des portes",
+          "LOCK_SUCCESS": "Verrouillage de la porte réussi",
+          "LOCK_FAILURE": "Échec du verrouillage de la porte",
+          "UNLOCK_SUCCESS": "Déverrouillage de la porte réussi",
+          "UNLOCK_FAILURE": "Échec du déverrouillage de la porte",
+          "MANAGE_DOOR_PLACEMENTS": "Gérer les emplacements des portes",
+          "OVERRIDE_RELOCK_TIMER": "Annulation de la minuterie de reverrouillage",
+          "OVERRIDE_RELOCK_TIMER_NOTE": "Par défaut : {{value}}",
+          "DISABLED": "Désactivé",
+          "OVERRIDE_RELOCK_TIMER_UNIT": "Secondes. 0 est désactivé.",
+          "PLACEMENT": "Emplacement",
+          "STATUS": {
+            "SENSOR_STATUS": "Statut des capteurs",
+            "SENSOR_MAPPINGS": "Mappages des capteurs",
+            "STATUS": "Statut",
+            "AVAILABLE_SENSORS": "Capteurs disponibles",
+            "DRAG_DROP_MAPPING": "Glisser et déposer ici sur la carte",
+            "DRAG_DROP_REMOVE_MAPPING": "Glisser et déposer ici pour supprimer le mappage",
+            "DOOR": "Porte",
+            "HANDLE": "Identificateur",
+            "LOCK": "Verrouiller"
+          }
+        },
+        "PDU": {
+          "TYPE": "Type",
+          "CRAC": "CRAC",
+          "FLOOR_PDU": "PDU au sol",
+          "FLOOR_UPS": "UPS au sol",
+          "POWER_PANEL": "Panneau d'alimentation",
+          "RACK_PDU": "PDU en rack",
+          "RACK_TRANSFER_SWITCH": "Commutateur de transfert en rack",
+          "RACK_UPS": "UPS en rack",
+          "STANDALONE_METER": "Compteur autonome",
+          "IP_ADDRESS": "Adresse IP",
+          "MAC_ADDRESS": "Adresse Mac",
+          "BACKUP_IP_ADDRESS": "Adresse IP de sauvegarde",
+          "PROXY_INDEX": "Indice de proxy",
+          "EXTERNAL_KEY": "Clé externe",
+          "DECOMMISSIONED_AT": "Mis(e) hors service à :",
+          "MAINTENANCE_MODE": "Mode de maintenance :",
+          "NAME": "Nom",
+          "MANUFACTURER": "Fabricant",
+          "MODEL": "Modèle",
+          "FIRMWARE": "Microprogramme",
+          "INLET_NAME": "Nom de l’entrée",
+          "CONTACT": "Contacter",
+          "LOCATION": "Emplacement",
+          "SERIAL_NUMBER": "Numéro de série",
+          "RATED_VOLTAGE": "Tension nominale",
+          "RATED_CURRENT": "Courant nominal",
+          "RATED_VA": "VA nominale",
+          "MANUALLY_CONFIGURED_VOLTAGE": "Tension configurée manuellement",
+          "MANUALLY_CONFIGURED_INLET_VOLTAGE": "Tension d’entrée configurée manuellement",
+          "MANUALLY_CONFIGURED_OUTLET_VOLTAGE": "Tension de sortie configurée manuellement",
+          "SNMP_VERSION": "Version SNMP",
+          "AUTHORIZATION_LEVEL": "Niveau d'autorisation",
+          "AUTHORIZATION_PROTOCOL": "Protocole d'autorisation",
+          "PRIVACY_PROTOCOL": "Protocole de confidentialité",
+          "INLET_PHASE": "Phase d’entrée",
+          "PREFERRED_INLET": "Entrée préférée",
+          "ACTIVE_INLET": "Entrée active",
+          "INLINE_METER": "Compteur en ligne",
+          "BELONGS_TO": "Appartient à",
+          "HEALTH": "Santé",
+          "SINGLE_PHASE": "Monophasé",
+          "THREE_PHASE": "Triphasé",
+          "INLINE_METER_VALUE": "Ce PDU est un compteur en ligne.",
+          "UNKNOWN": "Inconnu",
+          "NOT_ASSOCIATED_OBJECT": "Non associé à un objet de centre de données.",
+          "SINGLE_PHASE_VOLTAGE_TOOLTIP": "La valeur par défaut de ce paramètre pour les PDU monophasés est {{value}}.",
+          "INLET_VOLTAGE_TOOLTIP": "La valeur par défaut de ce paramètre pour l'entrée des PDU triphasés est {{value}}.",
+          "OUTLET_VOLTAGE_TOOLTIP": "La valeur par défaut de ce paramètre pour les sorties de PDU triphasés est {{value}}.",
+          "UNSET": "non configuré",
+          "UNKNOWN_PHASE_VOLTAGE_TOOLTIP": "Le type de phase PDU n'est pas défini. Celle-ci doit être définie avant que la tension puisse être configurée.",
+          "SNMP_DIAGNOSTICS": "Diagnostics SNMP",
+          "ELEMENT_TABS": {
+            "CIRCUIT_BREAKERS": "Disjoncteurs",
+            "CIRCUIT_POLES": "Circuit Poles",
+            "CIRCUITS": "Circuits",
+            "INLETS": "Entrées",
+            "OUTLETS": "Sorties",
+            "PANEL": "Panneau {{number}}",
+            "PANEL_LABEL": "Panel: {{label}}",
+            "SENSORS": "Sensors",
+            "UPS": "ASI (« onduleur »)",
+            "BATTERY": "Batterie"
+          }
+        },
+        "RACK": {
+          "LOCATION": "Emplacement",
+          "THRESHOLD_OVERRIDE_PERCENTAGES": "Pourcentages de dépassement de seuil",
+          "CRITICAL": "Critique",
+          "WARNING": "Avertissement",
+          "DEFAULT": "Par défaut : {{value}}%",
+          "NO_DEFAULT": "Aucune valeur par défaut",
+          "ELEMENT_TABS": {
+            "CIRCUITS": "Circuits",
+            "OUTLETS": "Sorties",
+            "DEVICES": "Dispositifs",
+            "SENSORS": "Sensors"
+          }
+        }
+      },
+      "ENTITY_ACTIONS": {
+        "REGION": {
+          "MAIN": "Action principale de l'espace réservé à la région"
+        },
+        "COUNTRY": {}
+      },
+      "PERMISSIONS": {
+        "ADD_GROUP_ROLE": "Ajouter un rôle de groupe",
+        "ADD_ROLE": "Ajouter un rôle",
+        "ADD_USER_ROLE": "Ajouter un rôle d’utilisateur",
+        "LABEL": "Libellé",
+        "LABEL_DETAIL": "{{type}} pour {{entityType}} : ",
+        "LOGIN": "Connexion",
+        "PERMISSIONS": "Autorisations",
+        "REMOVE_ROLE_MESSAGE": "Souhaitez-vous vraiment supprimer le(s) rôle(s) sélectionné(s) ?",
+        "REMOVE_ROLE": "Supprimer le rôle",
+        "REMOVE_ROLE_TITLE": "Avertissement concernant la suppression d'un rôle",
+        "ROLE_IS_ALREADY_TAKEN": "Le rôle est déjà utilisé",
+        "ROLE": "Rôle",
+        "SELECT_GROUP": "Sélectionner un groupe",
+        "SELECT_ROLE": "Sélectionner un rôle",
+        "SELECT_USER": "Sélectionner un utilisateur",
+        "TYPE": "Type",
+        "USER": "Utilisateur",
+        "USER_GROUP": "Groupe"
+      },
+      "ROLES": {
+        "VIEW": "Afficher",
+        "OPERATOR": "Opérateur",
+        "ADMINISTRATOR": "Administrateur",
+        "POWER_CONTROL": "Contrôle de l’alimentation",
+        "DOOR_CONTROL": "Contrôle des portes"
+      },
+      "ENTITY_HEADER": {
+        "FACILITY_ITEMS_COUNT": "Nombre d'éléments de l'installation : {{count}}"
+      },
+      "TABS": {
+        "SUMMARY": "Récapitulatif",
+        "DETAILS": "Détails",
+        "ELEMENTS": "Éléments",
+        "EVENTS": "Événements"
+      },
+      "TAGS": {
+        "ADD_A_TAG": "Ajouter une étiquette",
+        "REMOVE_TAG": "Supprimer une étiquette",
+        "REMOVE_TAG_MESSAGE": "Souhaitez-vous vraiment supprimer le(s) étiquette(s) sélectionné(s) ?",
+        "TAG": "Étiquette",
+        "TAG_ENTRY_ALREADY_EXISTS": "L’étiquette existe déjà",
+        "TAG_GROUP": "Groupe d'étiquettes",
+        "TAGS": "Étiquettes"
+      },
+      "TITLE": "Navigateur",
+      "TREE": {
+        "DEFAULT_TAB": "Onglet par défaut",
+        "DEFAULT_TAB_INSTRUCTION": "Aucun objet de centre de données n'a encore été créé. Veuillez créer un centre de données pour continuer.",
+        "ADD_DATACENTER": "Ajouter un centre de données",
+        "REMOVE_ALL_TABS": "Supprimer tous les onglets",
+        "REMOVE_ALL_TABS_MESSAGES": "Souhaitez-vous vraiment supprimer tous les onglets ?",
+        "DELETION_CONFIRMATION": "Confirmation de suppression",
+        "DELETE_BUTTON": "Supprimer {{type}} et les calculs",
+        "DELETE_EDM_MESSAGE": "Souhaitez-vous vraiment supprimer le {{type}} : {{name}} ? Cela supprimera tous les calculs du PUE associés aux centres de données qu'il contient et les relevés utilisés pour les rapports sur les appareils et les racks enfants.",
+        "DELETE_NODE_AND_READINGS": "Supprimer le nœud et les relevés",
+        "DELETE_NODE_MESSAGE": "Cela supprimera les relevés pour les rapports sur les périphériques enfants et les racks. Souhaitez-vous vraiment supprimer {{type}} : {{name}} ?",
+        "DELETE_DEVICE_AND_READINGS": "Supprimer le périphérique et les relevés",
+        "DELETE_DEVICE_MESSAGE": "Cela supprimera les relevés pour les rapports sur ce périphérique. Souhaitez-vous vraiment supprimer {{name}} ?",
+        "DELETE_DOOR_AND_AUDIT_HISTORY": "Supprimer l'historique des Portes et des Audits",
+        "DELETE_DOOR_MESSAGE": "Ceci supprimera l'historique d'audit pour cette porte. Souhaitez-vous vraiment supprimer {{name}} ?",
+        "REMOVE_ASSOCIATION": "Supprimer l'association",
+        "REMOVE_ASSOCIATION_MESSAGE": "Souhaitez-vous vraiment supprimer l'association pour « {{name}} » ? Le {{type}} actuel et ses relevés ne seront pas supprimés.",
+        "EDMNODE": {
+          "REGION": "Région",
+          "COUNTRY": "Pays",
+          "TERRITORY": "Territoire",
+          "CITY": "Ville",
+          "DATACENTER": "Centre de données",
+          "FLOOR": "Sol",
+          "ROOM": "Pièce",
+          "AISLE": "Allée",
+          "ROW": "Ligne",
+          "DCRACK": "Rack",
+          "DOOR": "Porte",
+          "DEVICE": "Périphérique informatique",
+          "CARDREADER": "Lecteur de cartes",
+          "KEYPAD": "Pavé numérique",
+          "PDU": "Pdu",
+          "SENSOR": "Capteur",
+          "FACILITY_ITEM_ASSOCIATION": "Association d'éléments de l'installation",
+          "SENSOR_ASSOCIATION": "Association du capteur",
+          "OUTLET": "Sortie",
+          "CIRCUIT": "Circuit"
+        },
+        "ASSOCIATION": {
+          "ASSOCIATION_ENTITY": "Associer l’entité",
+          "ASSOCIATION_WITH": "Associer avec",
+          "SEARCH": "Rechercher",
+          "NO_RESULT": "Aucun résultat..."
+        },
+        "CONTEXT_MENU": {
+          "ADD_ITEM": "Ajouter un élément",
+          "DELETE": "Supprimer",
+          "REMOVE": "Supprimer",
+          "RENAME": "Renommer",
+          "OPEN": "Ouvert",
+          "POWER_CONTROL": "Contrôle de l’alimentation"
+        },
+        "DEVICE_GROUP": {
+          "ADD_DEVICES_MSG": "Ajout de {{addcounts}} périphériques à {{name}}",
+          "ADD_DEVICES_TO_DEVICE_GROUP": "Ajouter des périphériques au groupe de périphériques",
+          "CREATE_DEVICE_GROUP": "Créer un groupe de périphériques",
+          "CREATE_NEW_DEVICE_GROUP": "Créer un nouveau groupe de périphériques",
+          "DEVICE_GROUP_NAME": "Nom du groupe de périphériques",
+          "DEVICE_GROUP_TITLE": "{{name}} ({{devicecounts}} périphérique informatique)",
+          "DUPLICATE_MSG": " (les dispositifs en double ne seront pas ajoutés à nouveau)",
+          "VIEW_DEVICE_GROUP": "Afficher un groupe de périphériques",
+          "NAME_IS_ALREADY_TAKEN": "Le nom est déjà utilisé",
+          "NO_DEVICES_ADD_MSG": "{{name}} ne contient aucun périphérique."
+        },
+        "POWER_CONTROL": {
+          "ON": "Marche",
+          "OFF": "Arrêt",
+          "CYCLE": "Cycle",
+          "POWER_ON": "Mise sous tension",
+          "POWER_OFF": "Mise hors tension",
+          "POWER_CYCLE": "Cycle d'alimentation",
+          "DEVICE_NAME": "Nom",
+          "POWER_ON_DELAY": "Délai de mise sous tension",
+          "CONFIRM_TITLE": "Confirmer le fonctionnement du contrôle de l’alimentation",
+          "CONFIRM_NOTES": "Êtes-vous sûr de vouloir effectuer cette opération de contrôle de l’alimentation ? Veuillez indiquer une raison pour cette opération :",
+          "SKIP_GRACEFUL_SHUT_DOWN": "Ignorer l'arrêt progressif",
+          "ONLY_SHUT_DOWN_DEVICES": "Effectuez uniquement un arrêt progressif sur les appareils (c'est-à-dire laisser les prises de courant allumées)",
+          "NO_DEVICES_TITLE": "Aucun périphérique éligible trouvé",
+          "NO_DEVICES_MSG": "Aucun périphérique dont la puissance peut être contrôlée n'est associé à cet élément.",
+          "POWER_ON_MSG": "Allumer",
+          "POWER_OFF_MSG": "Éteindre",
+          "POWER_CYCLE_MSG": "Cycle de puissance",
+          "DEVICE_LIST_POWER_ON_MSG": "Liste des appareils sous tension",
+          "DEVICE_LIST_POWER_OFF_MSG": "Mise hors tension de la liste des appareils",
+          "DEVICE_LIST_POWER_CYCLE_MSG": "Cycle d'alimentation de la liste des appareils",
+          "OUTLET_LIST_POWER_ON_MSG": "Liste des prises sous tension",
+          "OUTLET_LIST_POWER_OFF_MSG": "Liste des prises hors tension",
+          "OUTLET_LIST_POWER_CYCLE_MSG": "Cycle d'alimentation de la liste des prises"
+        }
+      }
+    },
+    "EVENTS": {
+      "SEVERITY": {
+        "CRITICAL": "Critique",
+        "WARNING": "Avertissement",
+        "INFORMATIONAL": "Informatif",
+        "UNKNOWN": "Inconnu",
+        "EVENT_TYPE": "Type d'événement",
+        "DEFAULT_SEVERITY": "Gravité par défaut",
+        "CURRENT_SEVERITY": "Gravité actuelle"
+      },
+      "STATUS": {
+        "ACTIVE": "Actif(ve)",
+        "CLEARED_BY_EVENT": "Effacé par un événement",
+        "CLEARED_BY_USER": "Effacé par un utilisateur",
+        "CLEARED_BY_SYSTEM_EVENT": "Effacé par un événement système",
+        "PURGED_EVENT": "un événement purgé",
+        "AT": "at"
+      },
+      "BUTTON": {
+        "CLEAR_SELECTED_EVENTS": "Effacer les événements sélectionnés"
+      },
+      "COLUMN": {
+        "OCCURRED_AT": "Est survenu à",
+        "SEVERITY": "Gravité",
+        "EVENT": "Événement",
+        "SUMMARY": "Récapitulatif",
+        "TARGET": "Cible",
+        "STATUS": "Statut",
+        "USER_CLEARING_REASON": "Clearing Reason"
+      }
+    },
+    "EVENT_CARD": {
+      "POWER": "Alimentation électrique",
+      "ENVIRONMENTAL": "Environnement",
+      "POLLING": "Interrogation",
+      "OTHER": "Autre",
+      "SEVERITY": {
+        "GOOD": "Bon",
+        "WARNING": "Avertissement",
+        "CRITICAL": "Critique"
+      }
+    }
+  },
+  "ELEMENTS": {
+    "FAC_ITEMS_TABLE": {
+      "HEADLINE": {
+        "ALL": "Tous les éléments en rack",
+        "SINGLE": "Élément de l'installation"
+      },
+      "HEADER": {
+        "LABEL": "Libellé",
+        "HEALTH": "Santé",
+        "INLETS": "Entrées",
+        "VOLTAGE": "Tension",
+        "CURRENT": "Actuel",
+        "ACTIVE_POWER": "Puissance active",
+        "APPARENT_POWER": "Puissance apparente",
+        "LAST_READING": "Dernier relevé"
+      }
+    },
+    "RANGES": {
+      "PAST_HOUR": "Portée sur l’heure précédente",
+      "PAST_DAY": "Portée sur les dernières 24 heures",
+      "PAST_WEEK": "Portée sur la semaine précédente",
+      "PAST_MONTH": "Portée sur le mois précédent",
+      "PAST_YEAR": "Portée sur l’année précédente"
+    }
+  },
+  "PDU_ELEMENT_TABLE": {
+    "NAME": "Nom",
+    "STATE": "État",
+    "ACTIVE_POWER": "Puissance active",
+    "APPARENT_POWER": "Puissance apparente",
+    "CURRENT": "Actuel",
+    "ENERGY": "Énergie",
+    "INLET": "Entrée {{num}}",
+    "IT_DEVICE": "Périphérique informatique",
+    "PHASE": "Phase",
+    "POWER_FACTOR": "Facteur de puissance",
+    "VOLTAGE": "Tension",
+    "TREND": "Tendance",
+    "RANGE": "Portée",
+    "RATING": "Puissance",
+    "REMAINING": "Restant",
+    "RESIDUAL_CURRENT": "Résiduel(le)",
+    "NO_VALUE": "S.O."
+  },
+  "DEVICE_ELEMENTS_TABLE": {
+    "DEVICE": "Dispositif",
+    "OUTLET_CIRCUIT": "Sortie/Circuit",
+    "DEFAULT_CIRCUIT_NAME": "Circuit {{ ordinal }}",
+    "DEFAULT_OUTLET_NAME": "Sortie {{ ordinal }}",
+    "PDU_NAME": "Élément d'installation",
+    "ACTIVE_POWER": "Puissance active",
+    "GROUPED": "Groupé",
+    "STACKED": "Empilé",
+    "RANGE": "Varier",
+    "NO_VALUE": "S/O",
+    "ON": "Au",
+    "OFF": "Désactivé"
+  },
+  "RACK_UNIT": {
+    "LED_MODE": {
+      "AUTOMATIC": "Automatique",
+      "MANUAL": "Manuel"
+    },
+    "LED_STATE": {
+      "BLINKING": "Clignotant",
+      "OFF": "Eteint",
+      "ON": "Allumé",
+      "SLOW_BLINKING": "Slow Blinking"
+    }
+  }
+}
